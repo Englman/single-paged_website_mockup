@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.red{
+    background-color: #E84C3D;
+}
+
+.yellow{
+    background-color: #FDBD1F;
+}
+
+.green{
+    background-color: #1BBC9B;
+}
+
+.purple{
+    background-color: #9B58B5;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    cursor: default;
+    background-image: url("../imgs/main-pic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(24, 88, 102);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #204B52;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.common{
+    width: 50%;
+}
+
+.leftPart{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.leftPart > h2{
+    position: absolute;
+    left: 30%;
+    color: white;
+}
+
+.rightPart{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.rp_block{
+    position: absolute;
+    right: 20%;
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.rp_block span{
+    color: white;
+}
+
+main{
+    margin: auto;
+    width: 80%;
+    min-height: 1600px;
+    padding: 8px 16px;
+}
+
+.m_upperBlock{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.mub_upper{
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mub_upper span{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mub_middle{
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mub_middle span{
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.mub_lower{
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mub_lower a{
+    border: 2px solid white;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: white;
+    font-weight: bold;
+}
+
+.m_middleBlock{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.mmb_block{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mmbb_uppercontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.mmbb_uppercontent h2{
+    color: white;
+    text-transform: uppercase;
+}
+
+.imageContainer{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img{
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+}
+
+.mmbb_lowercontent{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.mmbb_lowercontent span{
+    color: white;
+}
+
+.m_lowerBlock{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mlb_topContent{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mlb_topContent h2{
+    color: white;
+    text-transform: uppercase;
+}
+
+.mlb_topContent span {
+    position: relative;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    width: 600px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.mlb_topContent span:before, .mlb_topContent span:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(36, 135, 157);
+}
+
+.mlb_topContent span::before{
+    bottom: 50%;
+    left: 0;
+    width: 100px;
+    height: 1px;
+}
+
+.mlb_topContent span::after{
+    bottom: 50%;
+    right: 0;
+    width: 100px;
+    height: 1px;
+}
+
+
+.mlb_bottomContent{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mlbbC_content{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    background-color: #204B52;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mlbbC_content:nth-child(1){
+    border-top: 6px solid #E84C3D;
+}
+
+.mlbbC_content:nth-child(2){
+    border-top: 6px solid #FDBD1F;
+}
+
+.mlbbC_content:nth-child(3){
+    border-top: 6px solid #1BBC9B;
+}
+
+.mlbbcc_top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mlbbcc_top img{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.mlbbcc_middle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mlbbcc_middle span{
+    color: white;
+    opacity: 0.5;
+    line-height: 25px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.mlbbcc_bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mlbbcc_bottom .firstButton{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: #E84C3D;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.mlbbcc_bottom .secondButton{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: #FDBD1F;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.mlbbcc_bottom .thirdButton{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: #1BBC9B;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #204B52;
+    margin-top: 80px;
+}
+
+footer h5{
+    color: white;
+}
+
+footer h5 span{
+    color: gold;
+}
